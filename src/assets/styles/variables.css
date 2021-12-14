@@ -1,0 +1,15 @@
+:root {
+  --accent: #f88500;
+  --dark: #202328;
+  --deep: #171a1a;
+  --dark-header: #6f7a8b;
+  --dark-div: #2d3038;
+  --light-bg: #fafafa;
+  --light-disabled: #e4e6e8;
+  --light-div: #e7e7e8;
+  --middle-gray: rgba(111, 122, 139, 0.75);
+  --text-light: #999999;
+  --radius: 5px;
+  --radius-style: 0 5px;
+  --transition: 0.25s ease-out;
+}
