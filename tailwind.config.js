@@ -11,7 +11,11 @@ module.exports = {
       },
       textColor: {
         black: "#333333",
-        white: "#999999",
+      },
+      backgroundColor: {
+        "see-through": "rgba(196, 196, 196, 0.2)",
+        dark: "#202328",
+        darker: "#171a1a",
       },
     },
   },
