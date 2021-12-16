@@ -5,3 +5,8 @@
 .rounded-brand {
   @apply rounded-tr-[5px] rounded-bl-[5px];
 }
+
+.swiper {
+  --swiper-navigation-size: 14px;
+  --swiper-navigation-color: #818b9d;
+}

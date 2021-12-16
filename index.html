@@ -64,7 +64,7 @@
   </head>
   <body class="font-raleway text-black">
     <!-- Header -->
-    <div class="relative bg-dark text-white">
+    <div class="absolute z-50 inset-x-0 top-0 text-white">
       <!-- Desktop header -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div
@@ -72,7 +72,9 @@
             flex
             justify-between
             items-center
-            border-b-2 border-gray-100
+            border-b border-white/10
+            lg:pt-12
+            lg:pb-8
             py-5
             space-x-8
             lg:space-x-10
@@ -497,23 +499,53 @@
     </div>
 
     <!-- Slider -->
-    <div class="home-slider h-52 w-full">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
+    <div class="lg:p-3 bg-dark h-screen">
+      <div class="swiper home-slider w-full h-[70vh] lg:rounded-xl overflow-hidden">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="swiper-slide bg-cover bg-center"
+            style="background-image: url(/images/portfolio/interior-3.jpg)"
+          ></div>
+          <div
+            class="swiper-slide bg-cover bg-center"
+            style="background-image: url(/images/portfolio/interior-1.jpg)"
+          ></div>
+          <div
+            class="swiper-slide bg-cover bg-center"
+            style="background-image: url(/images/portfolio/installation-1.jpg)"
+          ></div>
+        </div>
+        <div
+          class="
+            absolute
+            bottom-0
+            right-0
+            pt-8
+            px-8
+            pb-6
+            bg-dark
+            lg:rounded-tl-xl
+            grid grid-cols-4
+            w-full
+            z-10
+            max-w-md
+            items-center
+          "
+        >
+          <!-- If we need pagination -->
+          <div class="swiper-pagination text-white font-light text-sm relative bottom-auto left-auto w-max font-roboto"></div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar h-[5px] col-span-2"></div>
+
+          <div class="relative justify-self-end flex space-x-10">
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev right-auto left-auto relative"></div>
+            <div class="swiper-button-next right-auto left-auto relative"></div>
+          </div>
+
+        </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
 
     <script type="module" src="/src/main.ts"></script>
