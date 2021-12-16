@@ -6,6 +6,10 @@
   @apply rounded-tr-[5px] rounded-bl-[5px];
 }
 
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6;
+}
+
 .swiper {
   --swiper-navigation-size: 14px;
   --swiper-navigation-color: #818b9d;

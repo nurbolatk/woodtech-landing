@@ -24,7 +24,7 @@ const homeSwiper: Swiper = new Swiper(".home-slider", {
     crossFade: true,
   },
   centeredSlides: true,
-  autoplay: true,
+  // autoplay: true,
 
   // If we need pagination
   pagination: {
