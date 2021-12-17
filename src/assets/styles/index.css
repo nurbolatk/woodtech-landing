@@ -6,6 +6,10 @@
   @apply rounded-tr-[5px] rounded-bl-[5px];
 }
 
+.rounded-brand-lg {
+  @apply rounded-tr-[10px] rounded-bl-[10px];
+}
+
 .container {
   @apply max-w-7xl mx-auto px-4 sm:px-6;
 }
