@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 
 Swiper.use([Navigation, Pagination, Scrollbar, EffectFade, Autoplay, Keyboard]);
 
-const homeSwiper: Swiper = new Swiper(".home-slider", {
+new Swiper(".home-slider", {
   // Optional parameters
   speed: 800,
   effect: "fade",
@@ -24,13 +24,13 @@ const homeSwiper: Swiper = new Swiper(".home-slider", {
     crossFade: true,
   },
   centeredSlides: true,
-  // autoplay: true,
+  autoplay: true,
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     type: "custom",
-    renderCustom: (swiper, current, total) => {
+    renderCustom: (_, current, total) => {
       return `<p>
         <span class="font-bold">${current}</span> | <span class="font-light">${total}</span>
       </p>`;
