@@ -797,90 +797,318 @@
       </div>
     </section>
 
-    <section class="py-16 container">
-      <div
-        class="
-          grid grid-cols-1
-          md:grid-cols-2 md:divide-x
-          divide-zinc-800
-          items-center
-          gap-y-3
-        "
-      >
-        <p class="text-sm md:text-right md:pr-12">
-          Представляем вам лучшие проекты, разработанные нашей командой
-          профессионалов с любовью и заботой о клиентах. Портфолио позволит вам
-          выбрать интересующий стиль, цвет дерева, фактуру, дизайн и
-          расположение элементов.
-        </p>
-        <div class="md:pl-12 row-start-1 md:col-start-2">
-          <h2 class="uppercase text-accent font-extrabold mb-1.5">
-            \\ Лучшие работы
-          </h2>
-          <h3 class="text-3xl font-extrabold">
-            Создаём тёплую атмосферу вашего отдыха
-          </h3>
+    <section
+      class="
+        py-16
+        bg-[linear-gradient(to_bottom,_#202328_0%,_#202328_50%,_#FAFAFA_50%)]
+      "
+    >
+      <div class="container">
+        <div
+          class="
+            grid grid-cols-1
+            md:grid-cols-2 md:divide-x
+            divide-zinc-800
+            items-center
+            gap-y-3
+            text-white
+          "
+        >
+          <p class="text-sm md:text-right md:pr-12">
+            Представляем вам лучшие проекты, разработанные нашей командой
+            профессионалов с любовью и заботой о клиентах. Портфолио позволит
+            вам выбрать интересующий стиль, цвет дерева, фактуру, дизайн и
+            расположение элементов.
+          </p>
+          <div class="md:pl-12 row-start-1 md:col-start-2">
+            <h2 class="uppercase text-accent font-extrabold mb-1.5">
+              \\ Лучшие работы
+            </h2>
+            <h3 class="text-3xl font-extrabold">
+              Создаём тёплую атмосферу вашего отдыха
+            </h3>
+          </div>
         </div>
-      </div>
-      <!-- List of projects section -->
-      <div>
-        <!-- Container for the list -->
-        <div class="grid grid-cols-[repeat(auto-fit,_minmax(19rem,_1fr))]">
-          <a href="#" class="group">
-            <figure
-              class="
-                bg-white
-                shadow-sm
-                transition-colors
-                border-b-[3px] border-slate-300
-                group-hover:border-accent
-              "
-            >
-              <img
-                class="h-52 object-cover object-center"
-                src="/images/portfolio/interior-4.jpg"
-                alt="Современная гостиная в древесных тонах"
-              />
-              <div class="p-6 grid grid-cols-[1rem_1fr] gap-y-1.5 gap-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-geo-alt-fill text-accent"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+        <!-- List of projects section -->
+        <div class="mt-12">
+          <!-- Container for the list -->
+          <div
+            class="grid grid-cols-[repeat(auto-fit,_minmax(19rem,_1fr))] gap-5"
+          >
+            <a href="#" class="group">
+              <figure
+                class="
+                  bg-white
+                  shadow-sm
+                  transition-colors
+                  border-b-[3px] border-slate-300
+                  group-hover:border-accent
+                "
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    class="h-52 object-cover object-center w-full"
+                    src="/images/portfolio/interior-4.jpg"
+                    alt="Современная гостиная в древесных тонах"
                   />
-                </svg>
-                <span class="text-sm text-slate-500 font-bold"
-                  >Санкт-Петербург, Английский Пр.</span
-                >
-                <svg
-                  width="5"
-                  height="35"
-                  viewBox="0 0 5 35"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="text-accent justify-self-center mt-2"
-                >
-                  <circle cx="2.5" cy="2.5" r="2.5" fill="currentColor" />
-                  <circle cx="2.5" cy="17.5" r="2.5" fill="currentColor" />
-                  <circle cx="2.5" cy="32.5" r="2.5" fill="currentColor" />
-                </svg>
+                  <span
+                    aria-hidden="true"
+                    class="
+                      absolute
+                      -top-px
+                      -left-px
+                      opacity-0
+                      block
+                      w-2.5
+                      h-2.5
+                      border-t border-l border-white
+                      group-hover:top-4 group-hover:left-4
+                      transition-all
+                      group-hover:opacity-100
+                    "
+                  ></span>
+                  <span
+                    aria-hidden="true"
+                    class="
+                      absolute
+                      -bottom-px
+                      -right-px
+                      opacity-0
+                      block
+                      w-2.5
+                      h-2.5
+                      border-b border-r border-white
+                      group-hover:bottom-4 group-hover:right-4
+                      transition-all
+                      group-hover:opacity-100
+                    "
+                  ></span>
+                </div>
+                <div class="p-6 grid grid-cols-[1rem_1fr] gap-y-1.5 gap-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill text-accent"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                    />
+                  </svg>
+                  <span class="text-sm text-slate-500 font-bold"
+                    >Санкт-Петербург, Английский Пр.</span
+                  >
+                  <svg
+                    width="5"
+                    height="35"
+                    viewBox="0 0 5 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="
+                      text-slate-500
+                      group-hover:text-accent
+                      transition-colors
+                      justify-self-center
+                      mt-2
+                    "
+                  >
+                    <circle cx="2.5" cy="2.5" r="2.5" fill="currentColor" />
+                    <circle cx="2.5" cy="17.5" r="2.5" fill="currentColor" />
+                    <circle cx="2.5" cy="32.5" r="2.5" fill="currentColor" />
+                  </svg>
 
-                <figcaption class="font-bold text-xl group-hover:underline">
-                  Современная гостиная в древесных тонах
-                </figcaption>
-              </div>
-            </figure>
-          </a>
-          <div>its</div>
-          <div>me</div>
+                  <figcaption class="font-bold text-lg group-hover:underline">
+                    Современная гостиная в древесных тонах
+                  </figcaption>
+                </div>
+              </figure>
+            </a>
+            <a href="#" class="group">
+              <figure
+                class="
+                  bg-white
+                  shadow-sm
+                  transition-colors
+                  border-b-[3px] border-slate-300
+                  group-hover:border-accent
+                "
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    class="h-52 object-cover object-center w-full"
+                    src="/images/portfolio/interior-5.1.jpg"
+                    alt="Панорамная чилаут зона для чтения и отдыха"
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="
+                      absolute
+                      -top-px
+                      -left-px
+                      opacity-0
+                      block
+                      w-2.5
+                      h-2.5
+                      border-t border-l border-white
+                      group-hover:top-4 group-hover:left-4
+                      transition-all
+                      group-hover:opacity-100
+                    "
+                  ></span>
+                  <span
+                    aria-hidden="true"
+                    class="
+                      absolute
+                      -bottom-px
+                      -right-px
+                      opacity-0
+                      block
+                      w-2.5
+                      h-2.5
+                      border-b border-r border-white
+                      group-hover:bottom-4 group-hover:right-4
+                      transition-all
+                      group-hover:opacity-100
+                    "
+                  ></span>
+                </div>
+                <div class="p-6 grid grid-cols-[1rem_1fr] gap-y-1.5 gap-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill text-accent"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                    />
+                  </svg>
+                  <span class="text-sm text-slate-500 font-bold"
+                    >Москва, Рублево-Успенское Ш.</span
+                  >
+                  <svg
+                    width="5"
+                    height="35"
+                    viewBox="0 0 5 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="
+                      text-slate-500
+                      group-hover:text-accent
+                      transition-colors
+                      justify-self-center
+                      mt-2
+                    "
+                  >
+                    <circle cx="2.5" cy="2.5" r="2.5" fill="currentColor" />
+                    <circle cx="2.5" cy="17.5" r="2.5" fill="currentColor" />
+                    <circle cx="2.5" cy="32.5" r="2.5" fill="currentColor" />
+                  </svg>
+
+                  <figcaption class="font-bold text-lg group-hover:underline">
+                    Панорамная чилаут зона для чтения и отдыха
+                  </figcaption>
+                </div>
+              </figure>
+            </a>
+            <a href="#" class="group">
+              <figure
+                class="
+                  bg-white
+                  shadow-sm
+                  transition-colors
+                  border-b-[3px] border-slate-300
+                  group-hover:border-accent
+                "
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    class="h-52 object-cover object-center w-full"
+                    src="/images/portfolio/interior-2.jpg"
+                    alt="Уютный лофт в светлых древесных тонах"
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="
+                      absolute
+                      -top-px
+                      -left-px
+                      opacity-0
+                      block
+                      w-2.5
+                      h-2.5
+                      border-t border-l border-white
+                      group-hover:top-4 group-hover:left-4
+                      transition-all
+                      group-hover:opacity-100
+                    "
+                  ></span>
+                  <span
+                    aria-hidden="true"
+                    class="
+                      absolute
+                      -bottom-px
+                      -right-px
+                      opacity-0
+                      block
+                      w-2.5
+                      h-2.5
+                      border-b border-r border-white
+                      group-hover:bottom-4 group-hover:right-4
+                      transition-all
+                      group-hover:opacity-100
+                    "
+                  ></span>
+                </div>
+                <div class="p-6 grid grid-cols-[1rem_1fr] gap-y-1.5 gap-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill text-accent"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                    />
+                  </svg>
+                  <span class="text-sm text-slate-500 font-bold"
+                    >Москва, На Якиманке.</span
+                  >
+                  <svg
+                    width="5"
+                    height="35"
+                    viewBox="0 0 5 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="
+                      text-slate-500
+                      group-hover:text-accent
+                      transition-colors
+                      justify-self-center
+                      mt-2
+                    "
+                  >
+                    <circle cx="2.5" cy="2.5" r="2.5" fill="currentColor" />
+                    <circle cx="2.5" cy="17.5" r="2.5" fill="currentColor" />
+                    <circle cx="2.5" cy="32.5" r="2.5" fill="currentColor" />
+                  </svg>
+
+                  <figcaption class="font-bold text-lg group-hover:underline">
+                    Уютный лофт в светлых древесных тонах
+                  </figcaption>
+                </div>
+              </figure>
+            </a>
+          </div>
+
+          <button class="btn-accent mt-11 mx-auto block">Показать еще</button>
         </div>
-
-        <button class="btn-accent">Показать еще</button>
       </div>
     </section>
 
