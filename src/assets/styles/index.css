@@ -30,3 +30,4 @@
 .swiper-slide-active [data-animate] {
   @apply translate-x-0 translate-y-0 opacity-100;
 }
+
