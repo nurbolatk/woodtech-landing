@@ -11,6 +11,7 @@ module.exports = {
       },
       textColor: {
         black: "#333333",
+        "dark-on-dark": "#6F7A8B",
       },
       backgroundColor: {
         "see-through": "rgba(196, 196, 196, 0.2)",

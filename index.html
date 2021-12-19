@@ -64,7 +64,7 @@
   </head>
   <body class="font-raleway text-black">
     <!-- Header -->
-    <div class="absolute z-50 inset-x-0 top-0 text-white">
+    <header class="absolute z-50 inset-x-0 top-0 text-white">
       <!-- Desktop header -->
       <div class="container">
         <div
@@ -495,21 +495,12 @@
           </nav>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- Slider -->
-    <div class="lg:p-3 bg-dark h-screen">
+    <div class="lg:p-3 bg-dark h-screen min-h-[520px] max-h-[720px]">
       <div
-        class="
-          swiper
-          home-slider
-          w-full
-          h-[100vh]
-          min-h-[520px]
-          max-h-[720px]
-          lg:rounded-xl
-          overflow-hidden
-        "
+        class="swiper home-slider w-full h-full lg:rounded-xl overflow-hidden"
       >
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -736,6 +727,34 @@
         </div>
       </div>
     </div>
+
+    <!-- Trusted by -->
+    <section class="bg-darker text-dark-on-dark">
+      <div class="container flex items-center justify-between">
+        <div class="grow space-y-4">
+          <h2 class="uppercase text-lg font-black">Нам доверяют</h2>
+          <hr class="bg-zinc-800 w-48 h-px border-0" />
+          <div class="columns-2 md:columns-3 gap-3">
+            <p class="font-roboto"><span class="font-bold">660</span> клиентов по всему миру</p>
+            <p class="font-roboto"><span class="font-bold">36</span> лучших франчайзи</p>
+            <p class="font-roboto"><span class="font-bold">23</span> надёжных партнёна</p>
+            <p class="font-roboto"><span class="font-bold">12</span> поставщиков</p>
+            <p class="font-roboto"><span class="font-bold">108</span> производителей мебели</p>
+            <p class="font-roboto"><span class="font-bold">89</span> сотрудников</p>
+            <p class="font-roboto"><span class="font-bold">256</span> восьмибитных цветов</p>
+            <p class="font-roboto"><span class="font-bold">38</span> пернатых попугаев</p>
+          </div>
+        </div>
+        <div class="basis-80 py-12 text-right">
+          <p>
+            Позвоните нам или оставьте заявку с сайта. Мы перезвоним вам в
+            течение 10 минут.
+          </p>
+          <p class="font-roboto font-light text-white mt-1.5 text-3xl">+7 (499) 246-75-32</p>
+          <button class="mt-4 bg-accent rounded-brand uppercase text-white py-3 px-8">Оформить заявку сейчас</button>
+        </div>
+      </div>
+    </section>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
