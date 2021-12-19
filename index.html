@@ -360,6 +360,9 @@
                 flex
                 items-center
                 space-x-3
+                hover:bg-zinc-800
+                active:bg-zinc-800
+                focus:bg-zinc-800
               "
             >
               <svg
@@ -391,6 +394,9 @@
                 flex
                 items-center
                 space-x-3
+                hover:bg-zinc-800
+                active:bg-zinc-800
+                focus:bg-zinc-800
               "
             >
               <svg
@@ -417,6 +423,9 @@
                 flex
                 items-center
                 space-x-3
+                hover:bg-zinc-800
+                active:bg-zinc-800
+                focus:bg-zinc-800
               "
             >
               <svg
@@ -446,6 +455,9 @@
                 flex
                 items-center
                 space-x-3
+                hover:bg-zinc-800
+                active:bg-zinc-800
+                focus:bg-zinc-800
               "
             >
               <svg
@@ -472,6 +484,9 @@
                 flex
                 items-center
                 space-x-3
+                hover:bg-zinc-800
+                active:bg-zinc-800
+                focus:bg-zinc-800
               "
             >
               <svg
@@ -733,7 +748,7 @@
       <div
         class="
           container
-          grid grid-cols-1
+          grid
           md:grid-cols-3
           items-center
           py-12
@@ -741,7 +756,7 @@
           md:gap-x-4
         "
       >
-        <div class="col-span-2 space-y-4 text-left">
+        <div class="col-span-2 space-y-4">
           <h2 class="uppercase text-lg font-black text-center md:text-left">
             Нам доверяют
           </h2>
@@ -807,7 +822,7 @@
       <div class="container">
         <div
           class="
-            grid grid-cols-1
+            grid
             md:grid-cols-2 md:divide-x
             divide-zinc-800
             items-center
@@ -848,7 +863,7 @@
               >
                 <div class="relative overflow-hidden">
                   <img
-                    class="h-52 object-cover object-center w-full"
+                    class="h-52 object-cover object-center w-full group-hover:scale-[1.05] transition-transform"
                     src="/images/portfolio/interior-4.jpg"
                     alt="Современная гостиная в древесных тонах"
                   />
@@ -938,7 +953,7 @@
               >
                 <div class="relative overflow-hidden">
                   <img
-                    class="h-52 object-cover object-center w-full"
+                    class="h-52 object-cover object-center group-hover:scale-[1.05] transition-transform w-full"
                     src="/images/portfolio/interior-5.1.jpg"
                     alt="Панорамная чилаут зона для чтения и отдыха"
                   />
@@ -1028,7 +1043,7 @@
               >
                 <div class="relative overflow-hidden">
                   <img
-                    class="h-52 object-cover object-center w-full"
+                    class="h-52 object-cover object-center group-hover:scale-[1.05] transition-transform w-full"
                     src="/images/portfolio/interior-2.jpg"
                     alt="Уютный лофт в светлых древесных тонах"
                   />
@@ -1116,16 +1131,36 @@
     <!-- About us -->
     <section class="bg-white py-20">
       <div class="container grid md:grid-cols-2">
-        <div class="relative ">
-          <span class="bg-slate-200 rounded-brand block w-56 h-72 absolute z-[1]"></span>
+        <div class="relative">
+          <span
+            class="bg-slate-200 rounded-brand block w-56 h-72 absolute z-[1]"
+          ></span>
           <img
             src="/images/portfolio/interior-6.jpg"
             alt="32 years on market"
             class="relative z-[2] p-4 rounded-brand w-100"
           />
-          <div class="rounded-brand text-white bg-dark bg-opacity-90 absolute z-[3] right-0 bottom-1/4 py-4 px-6 flex align-baseline space-x-1.5">
+          <div
+            class="
+              rounded-brand
+              text-white
+              bg-dark bg-opacity-90
+              absolute
+              z-[3]
+              right-0
+              bottom-1/4
+              py-4
+              px-6
+              flex
+              align-baseline
+              space-x-1.5
+            "
+          >
             <span class="font-roboto text-5xl font-bold">32</span>
-            <span>years <br> on market</span>
+            <span
+              >years <br />
+              on market</span
+            >
           </div>
         </div>
       </div>
