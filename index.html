@@ -742,7 +742,9 @@
         "
       >
         <div class="col-span-2 space-y-4 text-left">
-          <h2 class="uppercase text-lg font-black text-center">Нам доверяют</h2>
+          <h2 class="uppercase text-lg font-black text-center md:text-left">
+            Нам доверяют
+          </h2>
           <hr class="bg-zinc-800 w-48 h-px border-0 mx-auto md:mx-0" />
           <div class="columns-2 lg:columns-3 gap-3 text-sm">
             <p class="font-roboto">
@@ -776,15 +778,109 @@
             Позвоните нам или оставьте заявку с сайта. Мы перезвоним вам в
             течение 10 минут.
           </p>
-          <p class="font-roboto font-light text-white mt-4 md:mt-1.5 text-2xl md:text-3xl">
+          <p
+            class="
+              font-roboto font-light
+              text-white
+              mt-4
+              md:mt-1.5
+              text-2xl
+              md:text-3xl
+            "
+          >
             +7 (499) 246-75-32
           </p>
-          <button
-            class="mt-4 bg-accent rounded-brand uppercase text-white py-3 px-8 text-sm md:text-base"
-          >
+          <button class="btn-accent mt-4 md:text-base">
             Оформить заявку сейчас
           </button>
         </div>
+      </div>
+    </section>
+
+    <section class="py-16 container">
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2 md:divide-x
+          divide-zinc-800
+          items-center
+          gap-y-3
+        "
+      >
+        <p class="text-sm md:text-right md:pr-12">
+          Представляем вам лучшие проекты, разработанные нашей командой
+          профессионалов с любовью и заботой о клиентах. Портфолио позволит вам
+          выбрать интересующий стиль, цвет дерева, фактуру, дизайн и
+          расположение элементов.
+        </p>
+        <div class="md:pl-12 row-start-1 md:col-start-2">
+          <h2 class="uppercase text-accent font-extrabold mb-1.5">
+            \\ Лучшие работы
+          </h2>
+          <h3 class="text-3xl font-extrabold">
+            Создаём тёплую атмосферу вашего отдыха
+          </h3>
+        </div>
+      </div>
+      <!-- List of projects section -->
+      <div>
+        <!-- Container for the list -->
+        <div class="grid grid-cols-[repeat(auto-fit,_minmax(19rem,_1fr))]">
+          <a href="#" class="group">
+            <figure
+              class="
+                bg-white
+                shadow-sm
+                transition-colors
+                border-b-[3px] border-slate-300
+                group-hover:border-accent
+              "
+            >
+              <img
+                class="h-52 object-cover object-center"
+                src="/images/portfolio/interior-4.jpg"
+                alt="Современная гостиная в древесных тонах"
+              />
+              <div class="p-6 grid grid-cols-[1rem_1fr] gap-y-1.5 gap-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill text-accent"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                  />
+                </svg>
+                <span class="text-sm text-slate-500 font-bold"
+                  >Санкт-Петербург, Английский Пр.</span
+                >
+                <svg
+                  width="5"
+                  height="35"
+                  viewBox="0 0 5 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-accent justify-self-center mt-2"
+                >
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="currentColor" />
+                  <circle cx="2.5" cy="17.5" r="2.5" fill="currentColor" />
+                  <circle cx="2.5" cy="32.5" r="2.5" fill="currentColor" />
+                </svg>
+
+                <figcaption class="font-bold text-xl group-hover:underline">
+                  Современная гостиная в древесных тонах
+                </figcaption>
+              </div>
+            </figure>
+          </a>
+          <div>its</div>
+          <div>me</div>
+        </div>
+
+        <button class="btn-accent">Показать еще</button>
       </div>
     </section>
 

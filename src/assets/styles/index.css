@@ -31,3 +31,6 @@
   @apply translate-x-0 translate-y-0 opacity-100;
 }
 
+.btn-accent {
+  @apply bg-accent rounded-brand uppercase text-white py-3 px-8 text-sm font-normal md:font-extrabold;
+}
