@@ -32,5 +32,15 @@
 }
 
 .btn-accent {
-  @apply bg-accent rounded-brand uppercase text-white py-3 px-8 text-sm font-normal md:font-extrabold;
+  @apply bg-accent rounded-brand uppercase text-white py-3 px-8 text-sm md:text-base font-normal md:font-extrabold;
+}
+
+.modal-overlay.hide {
+  @apply opacity-0 pointer-events-none transition-opacity;
+}
+.modal-overlay.open {
+  @apply opacity-100 pointer-events-auto;
+  & > .modal-card {
+    @apply translate-y-0 opacity-100;
+  }
 }

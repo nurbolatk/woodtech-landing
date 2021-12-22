@@ -748,12 +748,11 @@
       <div
         class="
           container
-          grid
+          grid grid-cols-1
           md:grid-cols-3
           items-center
           py-12
-          gap-y-6
-          md:gap-x-4
+          md:gap-y-6 md:gap-x-4
         "
       >
         <div class="col-span-2 space-y-4">
@@ -805,7 +804,7 @@
           >
             +7 (499) 246-75-32
           </p>
-          <button class="btn-accent mt-4 md:text-base">
+          <button class="btn-accent mt-4 md:text-base" id="send-request">
             Оформить заявку сейчас
           </button>
         </div>
@@ -1155,9 +1154,9 @@
           ></span>
           <div class="m-4 overflow-hidden rounded-brand relative z-[2] h-full">
             <img
-            src="/images/portfolio/interior-6.jpg"
-            alt="32 years on market"
-            class="w-full h-full object-cover object-center"
+              src="/images/portfolio/interior-6.jpg"
+              alt="32 years on market"
+              class="w-full h-full object-cover object-center"
             />
           </div>
           <div
@@ -1196,7 +1195,13 @@
             viewBox="0 0 5 35"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="text-accent rotate-90 origin-bottom -translate-y-4 lg:translate-y-0"
+            class="
+              text-accent
+              rotate-90
+              origin-bottom
+              -translate-y-4
+              lg:translate-y-0
+            "
           >
             <circle cx="2.5" cy="2.5" r="2.5" fill="currentColor" />
             <circle cx="2.5" cy="17.5" r="2.5" fill="currentColor" />
@@ -1233,9 +1238,7 @@
                 соответствующим сертификатом европейского стандарта. Мы
                 используем продукцию только проверенных годами брендов.
               </p>
-              <a href="#" class="text-sm font-extrabold underline"
-                >Подробнее</a
-              >
+              <a href="#" class="text-sm font-extrabold underline">Подробнее</a>
             </div>
             <div>
               <h4 class="font-extrabold text-lg flex items-center gap-2">
@@ -1275,12 +1278,7 @@
                   </g>
                   <defs>
                     <clipPath id="clip0_140_174">
-                      <rect
-                        width="39.8496"
-                        height="40"
-                        fill="white"
-                        transform="translate(0.996216)"
-                      />
+                      <rect width="39.8496" height="40" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>
@@ -1294,14 +1292,120 @@
                 служить вам долгие годы, сохраняя свои качества и безупречный
                 внешний вид.
               </p>
-              <a href="#" class="text-sm font-extrabold underline"
-                >Подробнее</a
-              >
+              <a href="#" class="text-sm font-extrabold underline">Подробнее</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div
+      class="
+        modal-overlay
+        z-[1000]
+        bg-slate-600 bg-opacity-75
+        h-screen
+        w-screen
+        fixed
+        items-center
+        justify-center
+        inset-0
+        flex
+        hide
+      "
+    >
+      <div
+        class="
+          modal-card
+          max-w-[95%]
+          min-w-[16rem]
+          w-full
+          md:w-96
+          bg-white
+          rounded-md
+          p-4
+          opacity-0
+          translate-y-[10%]
+          transition-all
+          duration-500
+        "
+      >
+        <div class="flex items-center mb-2 py-2">
+          <h3 class="text-lg uppercase md:text-xl font-medium grow">
+            Оформить заявку
+          </h3>
+          <button id="close-modal">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <form class="space-y-4 text-center">
+            <input
+              class="
+                w-full
+                block
+                appearance-none
+                px-3.5
+                py-2.5
+                rounded
+                border border-zinc-300
+                font-roboto
+              "
+              type="text"
+              name="fullName"
+              id="fullName"
+              placeholder="Ваше имя"
+            />
+            <input
+              class="
+                w-full
+                block
+                appearance-none
+                px-3.5
+                py-2.5
+                rounded
+                border border-zinc-300
+                font-roboto
+              "
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Номер телефона"
+            />
+            <textarea
+              class="
+                w-full
+                block
+                appearance-none
+                px-3.5
+                py-2.5
+                rounded
+                border border-zinc-300
+                font-roboto
+              "
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="6"
+              placeholder="Комментарии"
+            ></textarea>
+            <button class="btn-accent">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
